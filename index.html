@@ -1,46 +1,167 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homepage</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brent Schoeters | E-Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
 
-<nav class="navbar navbar-expand-lg sticky-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">Portfolio</a>
-    <div class="navbar-nav ms-auto">
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="about.html">About</a>
+  <header class="site-header glass-panel">
+    <a href="index.html#home" class="logo">Brent Schoeters</a>
+    <button class="menu-toggle" aria-label="Open navigation">☰</button>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section hero reveal">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">IT Student · Cloud & Cybersecurity</p>
+          <h1>Welcome to my e-portfolio.</h1>
+          <p class="lead">My name is <strong>Brent Schoeters</strong>, a second-year Electronics-ICT student at Thomas More Geel. I am interested in cybersecurity, ethical hacking and building secure IT solutions.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View projects</a>
+            <a class="button secondary" href="#cv">View CV</a>
+          </div>
+        </div>
+        <aside class="hero-card glass-card">
+          <span class="card-label">Main focus</span>
+          <h2>Cloud & Cybersecurity</h2>
+          <p>I want to grow towards a career as an ethical hacker and keep improving my technical and professional skills.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+  <div class="container two-column about-grid">
+
+    <div class="about-image glass-card">
+      <img src="assets/BF877FA6-0588-46C0-A9D7-D030EFA9D8D8.jpg" alt="Brent Schoeters">
     </div>
-  </div>
-</nav>
 
-<section class="hero">
-  <div class="container text-center">
-    <h1>Welkom op mijn portfolio</h1>
+    <div>
+      <div class="sticky-title">
+        <p class="eyebrow">About me</p>
+        <h2>Calm, social and motivated to learn.</h2>
+      </div>
 
-    <p class="text-muted mt-3">
-      Welkom op mijn portfolio. Deze website heb ik gemaakt voor het vak <strong>Skills Integration</strong> binnen mijn richting <strong>Cloud & Cybersecurity</strong>.  
-      Hier verzamel en toon ik mijn projecten, opdrachten en vaardigheden die ik tijdens mijn opleiding ontwikkel.
-    </p>
+      <div class="glass-card text-card">
+        <p>I am a calm and social person who enjoys working together with others. I am easy to work with, reliable in group projects and I like approaching problems in a structured way.</p>
+        
+        <p>In my free time, I play handball, which I have been doing for over seven years. I also go to the gym. These hobbies help me clear my mind, stay disciplined and work on my physical condition.</p>
+        
+        <p>I chose this study because I have been interested in computers since I was around twelve years old. The part that interests me the most is cybersecurity: learning how systems work, how they can be attacked and how they can be protected.</p>
+        
+        <p>In the future, I would like to become an ethical hacker and work internationally for large companies.</p>
+      </div>
+    </div>
 
-    <p class="text-muted">
-      Op deze website kun je een overzicht vinden van mijn werk, zoals technische projecten, beveiligingsoplossingen en cloud-gerelateerde toepassingen.  
-      Het doel van dit portfolio is om mijn groei, kennis en praktische ervaring duidelijk te demonstreren.
-    </p>
-
-    <p class="text-muted">
-      Doorheen mijn opleiding werk ik aan verschillende cases en uitdagingen, en via deze website wil ik laten zien hoe ik problemen analyseer en oplos binnen de wereld van IT en cybersecurity.
-    </p>
-
-    <a href="about.html" class="btn btn-dark mt-3">Over mij</a>
   </div>
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Projects & achievements</h2>
+          <p>Click a project to open a separate detail page with more context, what I created, what I learned and which skills I used.</p>
+        </div>
+
+        <div class="project-grid">
+          <a class="project-card glass-card" href="project-hospital-navigation.html">
+  <span class="project-status completed">Completed</span>
+  <span class="project-number">01</span>
+  <h3>Hospital Navigation System</h3>
+  <p>Internal navigation concept for hospitals using BLE, route calculation, accessibility and security analysis.</p>
+  <span class="project-link">Open project →</span>
+</a>
+
+          <a class="project-card glass-card" href="project-hosting-platform.html">
+  <span class="project-status ongoing">Ongoing</span>
+  <span class="project-number">02</span>
+  <h3>Secure Hosting Platform</h3>
+  <p>A secure hosting platform assignment with automation, deployment, procedures, security tests and performance tests.</p>
+  <span class="project-link">Open project →</span>
+</a>
+
+          <article class="project-card glass-card muted-card">
+  <span class="project-status todo">To be continued</span>
+  <span class="project-number">03</span>
+  <h3>Extra Project</h3>
+  <p>Placeholder for another project you are proud of. This can be a school project, website, script or personal IT experiment.</p>
+  <span class="project-link">To be added</span>
+</article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <div class="container two-column">
+        <div class="sticky-title">
+          <p class="eyebrow">Skills</p>
+          <h2>Technical and soft skills.</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-box glass-card">
+            <h3>Technical skills</h3>
+            <p>Python · Java · HTML · CSS · Docker · GitHub</p>
+          </div>
+          <div class="skill-box glass-card">
+            <h3>Soft skills</h3>
+            <p>Teamwork · Communication · Problem-solving · Discipline · Willingness to learn</p>
+          </div>
+          <div class="skill-box glass-card">
+            <h3>Current growth</h3>
+            <p>I am still improving my programming and cybersecurity knowledge through school projects and practice.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cv" class="section reveal">
+      <div class="container cv-card glass-card">
+        <p class="eyebrow">Curriculum Vitae</p>
+        <h2>My CV</h2>
+        <p>This section is prepared for my CV. A separate CV page and a PDF download can be added here, as required for the e-portfolio.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="cv.html">Open CV page</a>
+          <a class="button secondary" href="assets/Brent_Schoeters_CV.pdf" download>
+  Download CV PDF
+</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal contact-section">
+  <div class="container contact-card glass-card">
+    <p class="eyebrow">Contact</p>
+    <h2>Thanks for visiting.</h2>
+    
+    <p>
+      This portfolio gives an overview of who I am, what I have learned and where I want to grow as an IT professional.
+    </p>
+
+    <div class="contact-info">
+      <p>You can contact me via email:</p>
+      
+      <a href="mailto:r1056106@student.thomasmore.be" class="email-link">
+        r1056106@student.thomasmore.be
+      </a>
+    </div>
+  </div>
+</section>
+  </main>
 </body>
 </html>
